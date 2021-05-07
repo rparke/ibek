@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>API &mdash; ibek 0.1 documentation</title>
+  <title>API &mdash; ibek 0.0+untagged.gc021ccb documentation</title>
   
 
   
@@ -71,7 +71,7 @@
             
             
               <div class="version">
-                0.1
+                master
               </div>
             
           
@@ -119,7 +119,7 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">API</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#ibek"><code class="docutils literal notranslate"><span class="pre">ibek</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ibek-builder"><code class="docutils literal notranslate"><span class="pre">ibek.builder</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ibek-support"><code class="docutils literal notranslate"><span class="pre">ibek.support</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -219,11 +219,11 @@ using <code class="docutils literal notranslate"><span class="pre">autoclass</sp
 <dd><p>Version number as calculated by <a class="reference external" href="https://github.com/dls-controls/versiongit">https://github.com/dls-controls/versiongit</a></p>
 </dd></dl>
 
-<span class="target" id="module-ibek.builder"></span><div class="section" id="ibek-builder">
-<h3><code class="docutils literal notranslate"><span class="pre">ibek.builder</span></code><a class="headerlink" href="#ibek-builder" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="module-ibek.support"></span><div class="section" id="ibek-support">
+<h3><code class="docutils literal notranslate"><span class="pre">ibek.support</span></code><a class="headerlink" href="#ibek-support" title="Permalink to this headline">¶</a></h3>
 <dl class="py class">
-<dt id="ibek.builder.Arg">
-<em class="property">class </em><code class="sig-prename descclassname">ibek.builder.</code><code class="sig-name descname">Arg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">description</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ibek/builder.html#Arg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ibek.builder.Arg" title="Permalink to this definition">¶</a></dt>
+<dt id="ibek.support.Arg">
+<em class="property">class </em><code class="sig-prename descclassname">ibek.support.</code><code class="sig-name descname">Arg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">description</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ibek/support.html#Arg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ibek.support.Arg" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -235,8 +235,8 @@ using <code class="docutils literal notranslate"><span class="pre">autoclass</sp
 </dd></dl>
 
 <dl class="py class">
-<dt id="ibek.builder.StrArg">
-<em class="property">class </em><code class="sig-prename descclassname">ibek.builder.</code><code class="sig-name descname">StrArg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">description</span></em>, <em class="sig-param"><span class="n">type</span><span class="o">=</span><span class="default_value">'str'</span></em>, <em class="sig-param"><span class="n">default</span><span class="o">=</span><span class="default_value">Undefined</span></em>, <em class="sig-param"><span class="n">is_id</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ibek/builder.html#StrArg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ibek.builder.StrArg" title="Permalink to this definition">¶</a></dt>
+<dt id="ibek.support.StrArg">
+<em class="property">class </em><code class="sig-prename descclassname">ibek.support.</code><code class="sig-name descname">StrArg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">description</span></em>, <em class="sig-param"><span class="n">type</span><span class="o">=</span><span class="default_value">'str'</span></em>, <em class="sig-param"><span class="n">default</span><span class="o">=</span><span class="default_value">Undefined</span></em>, <em class="sig-param"><span class="n">is_id</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ibek/support.html#StrArg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ibek.support.StrArg" title="Permalink to this definition">¶</a></dt>
 <dd><p>An argument with a str value</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -252,8 +252,8 @@ using <code class="docutils literal notranslate"><span class="pre">autoclass</sp
 </dd></dl>
 
 <dl class="py class">
-<dt id="ibek.builder.IntArg">
-<em class="property">class </em><code class="sig-prename descclassname">ibek.builder.</code><code class="sig-name descname">IntArg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">description</span></em>, <em class="sig-param"><span class="n">type</span><span class="o">=</span><span class="default_value">'int'</span></em>, <em class="sig-param"><span class="n">default</span><span class="o">=</span><span class="default_value">Undefined</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ibek/builder.html#IntArg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ibek.builder.IntArg" title="Permalink to this definition">¶</a></dt>
+<dt id="ibek.support.IntArg">
+<em class="property">class </em><code class="sig-prename descclassname">ibek.support.</code><code class="sig-name descname">IntArg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">description</span></em>, <em class="sig-param"><span class="n">type</span><span class="o">=</span><span class="default_value">'int'</span></em>, <em class="sig-param"><span class="n">default</span><span class="o">=</span><span class="default_value">Undefined</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ibek/support.html#IntArg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ibek.support.IntArg" title="Permalink to this definition">¶</a></dt>
 <dd><p>An argument with an int value</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -268,8 +268,8 @@ using <code class="docutils literal notranslate"><span class="pre">autoclass</sp
 </dd></dl>
 
 <dl class="py class">
-<dt id="ibek.builder.FloatArg">
-<em class="property">class </em><code class="sig-prename descclassname">ibek.builder.</code><code class="sig-name descname">FloatArg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">description</span></em>, <em class="sig-param"><span class="n">type</span><span class="o">=</span><span class="default_value">'float'</span></em>, <em class="sig-param"><span class="n">default</span><span class="o">=</span><span class="default_value">Undefined</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ibek/builder.html#FloatArg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ibek.builder.FloatArg" title="Permalink to this definition">¶</a></dt>
+<dt id="ibek.support.FloatArg">
+<em class="property">class </em><code class="sig-prename descclassname">ibek.support.</code><code class="sig-name descname">FloatArg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">description</span></em>, <em class="sig-param"><span class="n">type</span><span class="o">=</span><span class="default_value">'float'</span></em>, <em class="sig-param"><span class="n">default</span><span class="o">=</span><span class="default_value">Undefined</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ibek/support.html#FloatArg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ibek.support.FloatArg" title="Permalink to this definition">¶</a></dt>
 <dd><p>An argument with a float value</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -284,8 +284,8 @@ using <code class="docutils literal notranslate"><span class="pre">autoclass</sp
 </dd></dl>
 
 <dl class="py class">
-<dt id="ibek.builder.ObjectArg">
-<em class="property">class </em><code class="sig-prename descclassname">ibek.builder.</code><code class="sig-name descname">ObjectArg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">description</span></em>, <em class="sig-param"><span class="n">type</span></em>, <em class="sig-param"><span class="n">default</span><span class="o">=</span><span class="default_value">Undefined</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ibek/builder.html#ObjectArg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ibek.builder.ObjectArg" title="Permalink to this definition">¶</a></dt>
+<dt id="ibek.support.ObjectArg">
+<em class="property">class </em><code class="sig-prename descclassname">ibek.support.</code><code class="sig-name descname">ObjectArg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">description</span></em>, <em class="sig-param"><span class="n">type</span></em>, <em class="sig-param"><span class="n">default</span><span class="o">=</span><span class="default_value">Undefined</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ibek/support.html#ObjectArg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ibek.support.ObjectArg" title="Permalink to this definition">¶</a></dt>
 <dd><p>A reference to another entity defined in this IOC</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -300,8 +300,8 @@ using <code class="docutils literal notranslate"><span class="pre">autoclass</sp
 </dd></dl>
 
 <dl class="py class">
-<dt id="ibek.builder.Database">
-<em class="property">class </em><code class="sig-prename descclassname">ibek.builder.</code><code class="sig-name descname">Database</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file</span></em>, <em class="sig-param"><span class="n">include_args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">define_args</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ibek/builder.html#Database"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ibek.builder.Database" title="Permalink to this definition">¶</a></dt>
+<dt id="ibek.support.Database">
+<em class="property">class </em><code class="sig-prename descclassname">ibek.support.</code><code class="sig-name descname">Database</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file</span></em>, <em class="sig-param"><span class="n">include_args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">define_args</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ibek/support.html#Database"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ibek.support.Database" title="Permalink to this definition">¶</a></dt>
 <dd><p>A database file that should be loaded by the startup script and its args</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -315,15 +315,15 @@ using <code class="docutils literal notranslate"><span class="pre">autoclass</sp
 </dd></dl>
 
 <dl class="py class">
-<dt id="ibek.builder.Entity">
-<em class="property">class </em><code class="sig-prename descclassname">ibek.builder.</code><code class="sig-name descname">Entity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">databases</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">script</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ibek/builder.html#Entity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ibek.builder.Entity" title="Permalink to this definition">¶</a></dt>
+<dt id="ibek.support.Entity">
+<em class="property">class </em><code class="sig-prename descclassname">ibek.support.</code><code class="sig-name descname">Entity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">databases</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">script</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ibek/support.html#Entity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ibek.support.Entity" title="Permalink to this definition">¶</a></dt>
 <dd><p>A single entity that an IOC can instantiate</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – Publish Entity as type &lt;module&gt;.&lt;name&gt; for IOC instances</p></li>
-<li><p><strong>args</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.9)"><em>typing.Sequence</em></a><em>[</em><a class="reference internal" href="#ibek.builder.Arg" title="ibek.builder.Arg"><em>ibek.builder.Arg</em></a><em>]</em>) – The arguments IOC instance should supply</p></li>
-<li><p><strong>databases</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.9)"><em>typing.Sequence</em></a><em>[</em><a class="reference internal" href="#ibek.builder.Database" title="ibek.builder.Database"><em>ibek.builder.Database</em></a><em>]</em>) – Databases to instantiate</p></li>
+<li><p><strong>args</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.9)"><em>typing.Sequence</em></a><em>[</em><a class="reference internal" href="#ibek.support.Arg" title="ibek.support.Arg"><em>ibek.support.Arg</em></a><em>]</em>) – The arguments IOC instance should supply</p></li>
+<li><p><strong>databases</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.9)"><em>typing.Sequence</em></a><em>[</em><a class="reference internal" href="#ibek.support.Database" title="ibek.support.Database"><em>ibek.support.Database</em></a><em>]</em>) – Databases to instantiate</p></li>
 <li><p><strong>script</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – Startup script snippet defined as Jinja template</p></li>
 </ul>
 </dd>
@@ -331,14 +331,14 @@ using <code class="docutils literal notranslate"><span class="pre">autoclass</sp
 </dd></dl>
 
 <dl class="py class">
-<dt id="ibek.builder.Builder">
-<em class="property">class </em><code class="sig-prename descclassname">ibek.builder.</code><code class="sig-name descname">Builder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">module</span></em>, <em class="sig-param"><span class="n">entities</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ibek/builder.html#Builder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ibek.builder.Builder" title="Permalink to this definition">¶</a></dt>
+<dt id="ibek.support.Support">
+<em class="property">class </em><code class="sig-prename descclassname">ibek.support.</code><code class="sig-name descname">Support</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">module</span></em>, <em class="sig-param"><span class="n">entities</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ibek/support.html#Support"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ibek.support.Support" title="Permalink to this definition">¶</a></dt>
 <dd><p>Lists the entities a support module can build</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>module</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – Support module name, normally the repo name</p></li>
-<li><p><strong>entities</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.9)"><em>typing.Sequence</em></a><em>[</em><a class="reference internal" href="#ibek.builder.Entity" title="ibek.builder.Entity"><em>ibek.builder.Entity</em></a><em>]</em>) – The entities an IOC can create using this module</p></li>
+<li><p><strong>entities</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.9)"><em>typing.Sequence</em></a><em>[</em><a class="reference internal" href="#ibek.support.Entity" title="ibek.support.Entity"><em>ibek.support.Entity</em></a><em>]</em>) – The entities an IOC can create using this module</p></li>
 </ul>
 </dd>
 </dl>
